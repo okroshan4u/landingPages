@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+:root{
+    --purple:purple;
+    --yellow:yellow;
+    --dark:black;
+}
+
+
+
+.side .title{
+    color:white;
+    font-family: "Rubik",sans-serif;
+    font-size: 8vw;
+    margin:0px 15vw;
+    width:70vw;
+}
+.side{
+    height:100vh;
+    width:100%;
+
+    display:grid;
+    place-items:center;
+
+    overflow: hidden;
+    position:absolute;
+}
+#left-side{
+    background-color: var(--purple);
+    z-index:2;
+    
+}
+#right-side{
+    background-color: var(--yellow);
+
+}
+
+.side .fancy{
+    font-family: "Lobster" , cursive;
+    font-size: 1.3em;
+    line-height: 0.8em;
+}
+#left-side{
+    background-color: var(--purple);
+}
+#left-side .fancy{
+    color: var(--yellow);
+}
+#left-side .title{
+    color:white;
+}
+
+
+.btn{
+    top: 30px;
+    left:20px;
+    position: absolute;
+    z-index: 15;
+    font-size: 25px;
+    font-weight: bold;
+}
+.btn a{
+    text-decoration: none;
+    color:black;
+}
+#right-side .title{
+    color:var(--dark);
+}
+/* #right-side {
+    transition: width  0.1s ease;
+} */
+#left-side {
+    transition: width  0.2s ease;
+}
+#right-side .fancy{
+    color:white;
+    transition: all 1s;
+}
