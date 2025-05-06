@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    background: #0e1533;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 120vh;
+}
+.logo{
+    position: absolute;
+    left:0;
+    top:10px;
+    padding:15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.logo a{
+  color:#babcff;
+  text-decoration: none;
+}
+.calculator {
+    border: 1px solid rgb(51, 105, 149);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom:10px;
+    left: 500px;
+    top: 10px;
+    position: absolute;
+    background: transparent;
+    box-shadow: 1px 5px 15px rgba(87, 199, 171, 0.91);
+}
+
+input {
+    border: none;
+    background: transparent;
+    box-shadow: 0px 0px 10px rgba(87, 199, 171, 0.1);
+    width: 320px;
+    padding: 20px;
+    margin: 10px;
+    text-align: right;
+    font-size: 30px;
+    color: white;
+}
+
+input::placeholder {
+    color: rgb(92, 218, 218);
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    /* padding:10px; */
+    border: none;
+    background: transparent;
+    box-shadow: 0px 0px 10px rgba(115, 231, 202, 0.5);
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.equalbtn {
+    background-color: orange;
+}
+
+.operator {
+    color: rgb(77, 168, 85);
+}
+
+.danger {
+    background-color: red;
+}
+
+@media screen and (max-width:600px) {
+    .calculator {
+        width: 300px;
+
+    }
+
+    button {
+        width: 40px;
+        height: 30px;
+        font-size: 20px;
+        border-radius: 2px;
+        padding: 5px;
+    }
+
+    input {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1320px) {
+    .calculator {
+        left: 420px;
+    }
+}
+@media screen and (max-width:1120px) {
+    .calculator {
+        left: 350px;
+    }
+}
+@media screen and (max-width:1050px) {
+    .calculator {
+        left: 300px;
+    }
+}
+@media screen and (max-width:950px) {
+    .calculator {
+        left: 250px;
+    }
+}
+@media screen and (max-width:860px) {
+    .calculator {
+        left: 200px;
+    }
+}
+@media screen and (max-width:780px) {
+    .calculator {
+        left: 150px;
+    }
+}
+@media screen and (max-width:680px) {
+    .calculator {
+        left: 100px;
+    }
+}
+@media screen and (max-width:500px) {
+    .calculator {
+        left: 70px;
+    }
+}
+@media screen and (max-width:450px) {
+    .calculator {
+        left: 40px;
+    }
+}
+@media screen and (max-width:400px) {
+    .calculator {
+        left: 20px;
+    }
+}
+@media screen and (max-width:365px) {
+    .calculator {
+        left: 10px;
+    }
+}
+@media screen and (max-width:350px) {
+    .calculator {
+        left: 5px;
+    }
+}
+
+
+
+
+
+
+
+/* ********************************************
+
+Footer section starts here
+
+**********************************************/
+footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.brand{
+    color:#81ff00;
+}
+
+footer .social_icon,
+footer .menu {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer .social_icon li a {
+    font-size: 20px;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+
+}
+
+footer .menu li a {
+    font-size: 16px;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.3s;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+footer .menu li a:hover {
+    /* transform:translateY(-10px) */
+    opacity: 1;
+}
+
+footer .social_icon li a:hover {
+    transform: translateY(-10px)
+}
+
+footer p,
+footer p a {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave1 4s linear infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.7;
+    bottom: 15;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.2;
+    bottom: 20px;
+    animation: animateWave1 3s linear infinite;
+}
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave1 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
