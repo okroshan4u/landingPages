@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aquamarine;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    /* display:flex;
+    justify-content: center; */
+    /* align-items: center; */
+    background-color: white;
+    padding:20px;
+    border-radius: 10px;
+    min-width: 350px ;
+    min-height: 350px ;
+    margin-bottom: 100px;
+}
+.dropdown{
+    display: flex;
+    padding:20px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.amount input{
+    padding:10px;
+    width:90%;
+    border-radius: 10px ;
+    border: 1px solid lightgrey;
+}
+
+.amount{
+    padding:20px 10px;
+}
+
+/* form{
+    margin:50px 0px 5px 0px;
+} */
+.btn{
+    width:90%;
+    padding:10px;
+    margin: 30px 0px 15px 18px;
+    color:white;
+    background-color: rgba(128, 0, 128, 0.73);
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    cursor:pointer;
+    font-size: 20px;
+}
+
+.select-container img  {
+    max-width:2rem;
+  }
+.select-container select  {
+    margin:0px 4px;
+    cursor: pointer;
+  }
+
+.select-container{
+    display: flex;
+    /* background-color: red; */
+    border-radius: 5px;
+    justify-content: center;
+    width:100px;
+    padding:5px 3px;
+    align-items: center;
+    border: 1px solid lightgrey;
+    margin:10px 0px;
+    cursor: pointer;
+
+  }
+  .ico{
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width:460px) {
+    html{
+        font-size: 85%;
+    }
+    .container{
+        /* display:flex;
+        justify-content: center; */
+        /* align-items: center; */
+        background-color: white;
+        padding:15px;
+        border-radius: 10px;
+        min-width: 200px ;
+        min-height: 200px ;
+    
+    }
+    .ico{
+        font-size: 15px;
+        margin-top: 20px;
+      }
+      .btn{
+        width:90%;
+        padding:5px;
+        margin: 15px 0px 7px 9px;
+        color:white;
+        background-color: rgba(128, 0, 128, 0.73);
+        outline: none;
+        border-radius: 5px;
+        border: none;
+        cursor:pointer;
+        font-size: 15px;
+    }
+    .select-container{
+        display: flex;
+        /* background-color: red; */
+        border-radius: 5px;
+        justify-content: center;
+        width:80px;
+        padding:5px 3px;
+        align-items: center;
+        border: 1px solid lightgrey;
+        margin:10px 0px;
+        cursor: pointer;
+    
+      }
+      .select-container img  {
+        max-width:1.5rem;
+      }
+      .select-container select  {
+        margin:0px 2px;
+        cursor: pointer;
+      }
+  }
+
+
+  /* ********************************************
+  footer section
+  ***********************************************/
+
+
