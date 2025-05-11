@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: absolute;
+    transform: translate(-50% ,-50%);
+    background: red;
+    height: 100px;
+    width: 100px;
+    top : 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color:white;
+    left:50%;
+    cursor: pointer;
+}
+.clock{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:500px;
+    cursor: move;
+    width:500px;
+    background: rgb(96, 216, 96);
+    transform: translate(-50% ,-50%);
+    left: 50%;
+    top:50%;
+}
+.clock1 ,.clock2 ,.clock3,.clock4,.clock5{
+    background: rgb(24, 60, 82);
+    border-radius:12%;
+    position:absolute;
+    height:310px;
+    width:310px;
+}
+
+.clock1{
+    rotate: -45deg;
+}
+.clock2{
+    rotate:60deg;
+ 
+}
+.clock3{
+    rotate:-30deg;
+}
+
+
+
+#hour,#minute{
+    transform-origin: bottom;
+    position: absolute;
+   
+    border-radius: 20px;
+}
+.second{
+    transition: transform 1s linear;
+}
+
+#second{
+    /* transform-origin: bottom; */
+    position: absolute;
+    /* background: rgba(255, 255, 255, 0.46); */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+   
+}
+#hour{
+    width: 8%;
+    height: 30%;
+    top: 19%;
+    background: #f19292d4;
+    left: 46%;
+    /* display:none; */
+}
+#minute{
+    width: 8%;
+    height: 42%;
+    top: 6%;
+    background: rgba(104, 228, 70, 0.734);
+    left: 43%;
+    /* display:none; */
+}
+#second{
+    width: 8%;
+    height: 100%;
+    top: 0%;
+    left: 47%;
+    /* display:none; */
+}
+#sec{
+    height: 25px;
+    width:25px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+#day{
+    display: flex;
+    gap:5px;
+}

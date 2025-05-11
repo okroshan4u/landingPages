@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.clock{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:500px;
+    cursor: move;
+    width:500px;
+    background: rgb(96, 216, 96);
+    transform: translate(-50% ,-50%);
+    left: 50%;
+    top:50%;
+}
+.clock1 ,.clock2 ,.clock3,.clock4,.clock5{
+    background: rgb(24, 60, 82);
+    border-radius:12%;
+    position:absolute;
+    height:310px;
+    width:310px;
+}
+
+.clock1{
+    rotate:0deg;
+}
+.clock2{
+    rotate:60deg;
+ 
+}
+.clock3{
+    rotate:-30deg;
+}
+
+
+
+
+
+
+
+/* .clock1{
+    rotate:0deg;
+}
+.clock2{
+    rotate:45deg;
+ 
+}
+.clock3{
+    rotate:22.5deg;
+}
+.clock4{
+    rotate:45deg;
+} */
+/* .clock6{
+    position:absolute;
+    height:300px;
+    width:300px;
+    display: none;
+    rotate:225deg;
+    background: rgb(109, 153, 95);
+    border-radius:10%;
+}
+.clock7{
+    position:absolute;
+    height:300px;
+    width:300px;
+    display: none;
+    rotate:270deg;
+    background: rgb(50, 64, 82);
+    border-radius:10%;
+}
+.clock8{
+    position:absolute;
+    height:300px;
+    width:300px;
+    display: none;
+    rotate:315deg;
+    background: rgb(174, 174, 174);
+    border-radius:10%;
+} */
