@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Indian Flag</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        *:focus {
+            outline: 0;
+        }
+
+        html {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        .flag {
+            animation: flag-zoom 0.5s 2s linear forwards;
+            height: 100vh;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        .flag .color_one {
+            animation: translate-color 1s linear forwards;
+            background-color: #ff9933;
+            top: 0;
+            transform-origin:left;
+        }
+
+        .flag .color_one,
+        .flag .color_two {
+            height: 33vh;
+            left: 0;
+            position: absolute;
+            transform: scaleX(0);
+            width: 100%;
+        }
+
+        .flag .color_two {
+            animation: translate-color 1s 1s linear forwards;
+            bottom: 0;
+            background-color: #138808;
+            transform-origin: right;
+        }
+
+        .flag .chakra {
+            animation: fade-in 0.5s 3s linear forwards;
+            left: 50%;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%) scale(5);
+            z-index: 1;
+        }
+
+        .flag .chakra img {
+            animation: rotate 20s linear infinite;
+            height: 34vh;
+            margin-top: 0.5vh;
+        }
+
+        @keyframes flag-zoom {
+            to {
+                transform: rotateZ(-15deg) scale(1.5);
+            }
+        }
+
+        @keyframes translate-color{
+            to {
+                transform: scaleX(1);
+            }
+        }
+
+        @keyframes fade-in {
+            to {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes rotate {
+            to {
+                transform: rotateZ(1turn);
+
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="flag">
+        <div class="color_one"></div>
+        <div class="chakra"><img src="Ashoka_Chakra.svg.png" alt="Ashok chakra" title="Asok Chakra"></div>
+        <div class="color_two"></div>
+    </div>
+</body>
+
+</html>
