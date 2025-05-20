@@ -1,0 +1,180 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(0 0 44);
+    color: White;
+}
+
+/* navbar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(23 23 93);
+    ;
+}
+
+nav ul {
+    display: flex;
+    margin: 10px;
+    right: 0px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(148, 107, 186);
+    font-size: 1.02rem;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+
+/* main */
+hr {
+    border: 0px;
+    height: 2px;
+    background-color: #8980ad;
+    margin: 40px 70px;
+}
+
+
+
+
+/* first section */
+
+.firstsection {
+    display: flex;
+    margin: 60px 0px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.firstsection>div {
+    width: 33%;
+}
+
+
+/* firstleft section */
+.firstleftsection {
+    font-size: 3rem;
+}
+
+.purple {
+    color: blueviolet;
+}
+
+#element {
+    color: blueviolet;
+}
+
+
+/* button section */
+.button{
+    margin-top:50px;
+}
+.btn{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #bcbcfc;
+    border:2px solid black;
+    border-radius: 10px;
+    padding:10px;
+}
+.btn:hover{
+    background-color: rgb(244, 10, 10);
+    color:white; 
+}
+
+
+
+/* first right section */
+
+.firstrightsection img {
+    width: 80%;
+}
+
+/* second section */
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 90vh;
+}
+
+.text-gray {
+    color: gray;
+}
+
+.box-for-line {
+    width: 72vw;
+    height: 2px;
+    background-color: white;
+    margin: 50px 0px;
+    display: flex;
+}
+
+.box-vertical-line {
+    height: 90px;
+    width: 2px;
+    margin: 0px 90px;
+    background-color: white;
+}
+
+.image-top {
+    position: relative;
+    top: -41px;
+    left: -18px;
+    height: 40px;
+}
+
+.vertical-title {
+    width: 150px;
+    margin-top: 47px;
+    margin-left: -42px;
+    color:#50c745;
+}
+
+.vertical-desc {
+    width: 150px;
+    margin: 13px -42px;
+}
+
+/* footer section */
+.footer{
+    background-color: black;
+    padding:20px;
+}
+.footer-all{
+    display:flex;
+    justify-content: space-evenly;
+    padding:20px;
+}
+/* .footer > div{
+    width:100px;
+} */
+footer ul li{
+    list-style: none;
+
+}
+.footer-rights{
+    text-align: center;
+    color:gray;
+    /* margin-bottom: 20px; */
+}
