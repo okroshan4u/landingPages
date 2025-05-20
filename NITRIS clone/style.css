@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    background: url('login-register.jpg') center center/cover;
+    height: 100vh;
+}
+
+.right_div {
+    width: 20vw;
+    height: 100vh;
+    background: white;
+
+}
+
+.right_div input {
+    /* margin:10px; */
+    padding: 8px;
+    font-size: 16px;
+    outline: none;
+    width: 202px;
+    font-weight:bold;
+}
+
+.input1 {
+    /* border: 2px solid red; */
+    margin: 10px 10px;
+    /* background-color: #36bea6; */
+}
+.input1 i{
+    border:1px solid black;
+}
+
+.input2 {
+    /* border: 2px solid red; */
+    margin: 0px 10px;
+    margin-top: 10px;
+    /* background-color: #36bea6; */
+}
+
+.right_div p {
+    font-size: 13px;
+    margin-left: 131px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.right_div p i {
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+.right_div h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+#nitris {
+    width: 160px;
+    margin: 0px 60px;
+    margin-top: 40px;
+
+}
+
+.log {
+    background: #2962ff;
+    color: white;
+    padding: 10px;
+    margin: 20px 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.Covid {
+    color: #f62d51;
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.line {
+    border: 2px solid#f62d51;
+    margin: 0px auto 0px auto;
+    margin-bottom: 50px;
+    width: 210px;
+
+}
+
+.gen1 {
+    background: #4fc3f7;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 10px;
+}
+
+.gen2 {
+    background: #ffbc34;
+    color: white;
+    padding: 10px;
+    margin: 10px 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.gen3 {
+    background: #36bea6;
+    color: white;
+    padding: 10px;
+    margin: 10px 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.slidimg img {
+    width: 650px;
+    margin: 78px 70px 0px 25px;
+}
+
+.zone {
+    /* background: #ced6eb; */
+    margin-left: 10px;
+    color: #ffbc34;
+    box-shadow: -2px 2px 10px rgb(144, 140, 140);
+    /* font-weight: 200; */
+    padding: 0px 10px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.zone_title{
+    text-align: center;
+}
