@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+:root{
+    --body-color:#f3c8f6;
+    --nav-background:#f3c8f6cc;
+    /* --footer-background:; */
+}
+.dark-theme{
+ --body-color:#330036;
+  --nav-background:#d3d0cb;
+}
+
+
+
+
+
+body{
+  min-height: 95vh;
+}
+
+/* ********************nav section********************* */
+
+.navbar{
+    height:70px;
+    background: var(--nav-background);
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.logo , .nav-links{
+    margin:0 20px;
+}
+.navbar ul li{
+    list-style: none;
+    margin:0 10px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color:black;
+}
+#logo{
+    text-decoration: none;
+    color:#330036;
+    font-weight: bold;
+    font-size: 20px;
+   
+}
+#sun{
+    font-weight: bold;
+    cursor: pointer;
+    font-size:18px;
+    padding:0 10px;
+}
+
+@media screen and (max-width:530px) {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        padding:10px 0;
+
+    }
+   
+}
+
+
+
+
+/* ***********************hero section**************** */
+.hero-section{
+    height:95vh;
+    background: var(--body-color);
+}
+.hero-section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.container img{
+    width:200px;
+}
+/* ********************footer************************ */
+
+
+footer{
+    /* position: relative;/* /* when navbar is present and  */
+    position: relative;
+    width:100%;
+    background: #3586ff;
+    min-height:70px;
+    padding:5px 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    bottom:0;
+    flex-direction: column;
+
+}
+footer .social_icon,
+footer .menu{
+    display:flex;
+    position:relative;
+    align-items: center;
+    justify-content: center;
+    margin:5px 0;
+    flex-wrap:wrap;
+}
+footer li{
+    list-style: none;
+}
+footer .social_icon li a{
+    color:white;
+    margin:0 10px;
+    display:inline-block;
+    transition:0.5s;
+    
+}
+footer .menu li a{
+    font-size:16px;
+    color:white;
+    margin:0 10px;
+    display:inline-block;
+    transition:0.3s;
+    text-decoration: none;
+    opacity:0.7;
+}
+footer .menu li a:hover{
+    /* transform:translateY(-10px) */
+    opacity:1;
+}
+footer .social_icon li a:hover{
+    transform:translateY(-10px)
+   
+}
+#footer-web-link{
+    color:#210e72;
+}
+
+footer p,footer p a{
+    color:#fff;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom:10px;
+   
+}
+
+footer .wave{
+    position: absolute;
+    top:-100px;
+    left:0;
+    width:100%;
+    height:100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1{
+    z-index:1000;
+    opacity:1;
+    bottom:0;
+    animation : animateWave 4s linear infinite;
+}
+footer .wave#wave2{
+    z-index:999;
+    opacity:0.5;
+    bottom:10px;
+    animation : animateWave1 4s linear infinite;
+}
+footer .wave#wave3{
+    z-index:1000;
+    opacity:0.7;
+    bottom:15;
+    animation : animateWave 3s linear infinite;
+}
+footer .wave#wave4{
+    z-index:999;
+    opacity:0.2;
+    bottom:20px;
+    animation : animateWave1 3s linear infinite;
+}
+@keyframes animateWave{
+    0%{
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave1{
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+
+
+/* ***************clock*********************** */
+
+#clockcontainer{
+    display: flex;
+    top:50px;
+    position:relative;
+    margin:auto;
+    background: url('clock1.png') no-repeat center center/cover;
+    background-size: 100%;
+    width:400px;
+    height:400px;
+    
+}
+#hour,#minute,#second{
+    transform-origin: bottom;
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+}
+#hour{
+    width: 3%;
+    height: 24%;
+    top: 26%;
+    left: 48.3%;
+    /* display:none; */
+}
+#minute{
+    width: 2%;
+    height: 31%;
+    top: 19%;
+    left: 49%;
+    /* display:none; */
+}
+#second{
+    width: 1%;
+    height: 37%;
+    top: 13%;
+    left: 49.3%;
+   
+}
+
+@media screen and (max-width:530px) {
+    #clockcontainer{
+        height: 300px;
+        width: 300px;
+    }
+}
