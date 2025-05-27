@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --nav-backround: #c7dceb;
+    --body-backround: #9ed7fc;
+    --nav-color: black;
+    --body-color: black;
+    --info-background: #f2cee6;
+    --footer-background: #69c1fc;
+}
+
+.dark-theme {
+    --nav-backround: #89959B;
+    --body-backround: #0E1116;
+    --nav-color: #eff1f3;
+    --body-color: #eff1f3;
+    --info-background: #ff00a9;
+
+    --footer-background: #374A67;
+}
+
+
+
+body {
+    background-color: var(--body-backround);
+    color: var(--body-color);
+
+}
+
+main {
+    min-height: 90vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+    height: 70px;
+    background: var(--nav-backround);
+    color: var(--nav-color);
+}
+
+.list ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+    list-style: none;
+}
+
+.list ul li {
+    margin: 0 5px;
+}
+
+.list ul li a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--nav-color);
+}
+
+.list ul li a:hover {
+    opacity: 0.8;
+    transition: 0.3s ease;
+}
+
+.logo,
+.list {
+    margin: 0 20px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#sun {
+    cursor: pointer;
+}
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+
+    top: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+
+.row,
+.row1 {
+    /* border: 2px solid rgb(16, 213, 12); */
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+#search {
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+::placeholder {
+    color: grey;
+    opacity: 0.7; /* Firefox */
+  }
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.wind {
+    display: flex;
+    border-radius: 8px;
+    padding: 20px;
+    border: 2px solid black;
+    background: var(--info-background);
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 142px;
+}
+
+.temp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 8px;
+    background: var(--info-background);
+    height: 142px;
+
+}
+
+
+/* ********************************************
+ Footer code goes here
+************************************************/
+.footer {
+    background: var(--footer-background);
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 300px; */
+    min-height: 300px;
+    left: 0;
+    bottom: 0;
+}
+
+.footer-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    /* display: flex; */
+    padding: 25px 20px;
+
+    gap: 70px;
+}
+
+.icon i,
+.email i {
+    font-size: 20px;
+}
+
+
+.icon span {
+    margin-right: 20px;
+    margin-top: 5px;
+    /* border:1px solid black;
+    border-radius: 3px;
+
+    background-color: red; */
+}
+
+.content,
+.contact {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.contact {
+    margin-left: 150px;
+}
+
+.content {
+    margin-left: 50px;
+}
+
+/* *********************Media queries*********************** */
+@media screen and (max-width:940px) {
+    .footer-div {
+        padding: 10px 20px;
+    }
+
+  
+
+    .contact {
+        margin-left: 50px;
+    }
+
+    .para {
+        top: 30px;
+        position: relative;
+    }
+}
+@media screen and (max-width:820px) {
+      html {
+        font-size: 80%;
+    }
+    .footer-div {
+        padding: 10px;
+    }
+}
+@media screen and (max-width:700px) {  
+    .para {
+        top: 10px;
+    }
+    .content {
+        margin-left: 0px;
+    }
+    .contact {
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+}
+@media screen and (max-width:575px) {   
+
+    .row1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .row, .row1 {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+    .wind {
+        width: 280px;
+    }
+}
+@media screen and (max-width:480px) {   
+
+    .footer-div {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .para {
+        top: 5px;
+        justify-content: center;
+        display: flex;
+        padding: 0 10px;
+        align-items: center;
+        text-align: center;
+    }
+    .footer {
+        padding: 10px 0;
+    }
+    .icon{
+        padding-top:5px;
+    }
+    #search {
+        font-size: 22px;
+    }
+    .row, .row1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        height: auto;
+    }
+    .row1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px;
+
+    }
+    .icon i, .email i {
+        font-size: 12px;
+    }
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding: 0 10px;
+        text-align: center;
+        position: relative;
+    }
+    .footer-div {
+        padding: 0px 5px;
+    }
+}
+@media screen and (max-width:450px) {   
+    .para {
+        top: 0; 
+    }
+  
+   
+}
